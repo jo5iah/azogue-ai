@@ -4,12 +4,12 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Azogue AI | Independent AI Security Practice</title>
-<meta name="description" content="Azogue AI is an independent AI security practice. Knowledge graphs, machine learning and agentic systems applied to hard security problems. Led by Josiah Hagen, Coalition for Secure AI Workstream Lead.">
+<meta name="description" content="Independent AI security practice. Knowledge graphs, machine learning and agentic systems applied to threat detection, vulnerability management and zero trust for AI.">
 <link rel="canonical" href="https://azogue.ai/">
 <meta name="theme-color" content="#060d19">
 <meta property="og:type" content="website">
 <meta property="og:title" content="Azogue AI | Independent AI Security Practice">
-<meta property="og:description" content="Knowledge graphs, machine learning and agentic systems applied to hard security problems.">
+<meta property="og:description" content="Independent AI security practice. Knowledge graphs, machine learning and agentic systems applied to threat detection, vulnerability management and zero trust for AI.">
 <meta property="og:url" content="https://azogue.ai/">
 <meta property="og:image" content="https://azogue.ai/img/hero-wide-sm.jpg">
 <meta name="twitter:card" content="summary_large_image">
@@ -95,25 +95,42 @@
   h1 em { font-style: normal; color: var(--copper); }
 
   .what {
-    margin: 0 0 2.4rem;
+    margin: 0 0 1.1rem;
     font-size: clamp(1.1rem, 2.3vw, 1.45rem);
     line-height: 1.45;
     color: var(--dim);
     max-width: 40ch;
   }
 
+  /* credential line: quieter than .what, emphasis in silver so copper stays
+     reserved for the h1 accent and the call to action */
+  .cred {
+    margin: 0 0 2.2rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    color: var(--faint);
+    max-width: 42ch;
+  }
+  .cred b { color: var(--silver); font-weight: 600; }
+
+  /* call to action: brighter than an attribution line, still quiet */
   .who {
     margin: 0;
-    padding-top: 1.8rem;
+    padding-top: 1.9rem;
     border-top: 1px solid var(--rule);
-    font-size: .95rem;
-    line-height: 1.55;
-    color: var(--faint);
+    font-size: 1.05rem;
+    line-height: 1.5;
+    color: var(--dim);
     max-width: 44ch;
   }
-  .who b { color: var(--dim); font-weight: 600; }
-  .who a { color: var(--dim); text-decoration: none; border-bottom: 1px solid var(--rule); }
-  .who a:hover { color: var(--copper); border-bottom-color: var(--copper); }
+  .who b { font-weight: 600; }
+  .who a {
+    color: var(--copper);
+    text-decoration: none;
+    border-bottom: 1px solid rgba(224,142,82,.35);
+    transition: border-color .14s ease;
+  }
+  .who a:hover { border-bottom-color: var(--copper); }
 
   /* ---------- footer ---------- */
   footer {
@@ -139,7 +156,8 @@
     }
     .inner { align-items: flex-end; padding-top: 8rem; }
     .mark { margin-bottom: 1.8rem; }
-    .what { margin-bottom: 1.9rem; }
+    .what { margin-bottom: .9rem; }
+    .cred { margin-bottom: 1.7rem; }
   }
   @media (min-width: 901px) and (max-width: 1400px) {
     .bg { background-image: url("img/hero-wide-sm.webp"); }
@@ -165,9 +183,13 @@
         Knowledge graphs, machine learning and agentic systems applied to hard security problems.
       </p>
 
+      <p class="cred">
+        Nearly three decades of building data-driven solutions. <b>With math.</b>
+      </p>
+
       <p class="who">
-        <a href="mailto:josiah@azogue.ai"><b>Josiah Hagen</b></a>, Coalition for Secure AI
-        Workstream Lead on Preparing Defenders for a Changing Threat Landscape.
+        Talk to <a href="mailto:josiah@azogue.ai"><b>Josiah Hagen</b></a> about securing your
+        AI systems.
       </p>
     </div>
   </div>
